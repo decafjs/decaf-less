@@ -8,7 +8,7 @@
 
 var less = require('..');
 
-console.dir(less.Parser);
+//console.dir(less.Parser);
 
 var source = [
 '@base: #f938ab;',
