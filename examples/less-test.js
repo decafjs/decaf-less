@@ -6,10 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var less = require('..').compile;
+var less = require('..');
 
-console.dir(less);
-builtin.process.exit(0);
+console.dir(less.Parser);
 
 var source = [
 '@base: #f938ab;',
@@ -29,13 +28,5 @@ var source = [
 '}'
 ].join('\n');
 
-//var parser = new less.Parser();
-//parser.parse(source, function(e, root) {
-//    if (e) {
-//        console.dir(e);
-//    }
-//    else {
-//        console.log(root.toCSS());
-//    }
-//});
-//
+console.dir(less.compile(source));
+
